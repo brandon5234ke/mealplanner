@@ -1,0 +1,112 @@
+/* style.css */  
+
+/* Reset some default styles */  
+* {  
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0;  
+  }  
+  
+  /* General styles */  
+  body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f4f4f4;  
+    color: #333;  
+  }  
+  
+  .container {  
+    max-width: 1200px;  
+    margin: 0 auto;  
+    padding: 20px;  
+  }  
+  
+  header {  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+    margin-bottom: 20px;  
+    background-color: #006400; /* Dark green */  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  }  
+  
+  h1 {  
+    color: white;  
+    font-size: 32px;  
+  }  
+  
+  .header-image {  
+    max-width: 150px;  
+    border-radius: 50%;  
+  }  
+  
+  .meal-planner {  
+    display: grid;  
+    grid-template-columns: repeat(1, 1fr);  
+    grid-gap: 20px;  
+  }  
+  
+  .day-container {  
+    background-color: white;  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  }  
+  
+  .day-container h2 {  
+    margin-bottom: 10px;  
+    color: #006400; /* Dark green */  
+  }  
+  
+  .meal-item {  
+    margin-bottom: 20px;  
+  }  
+  
+  .meal-name,  
+  .meal-description {  
+    width: 100%;  
+    padding: 10px;  
+    border: 2px solid #4fd14f; /* Dark green border */  
+    border-radius: 10px;  
+    font-size: 16px;  
+    color: #333;  
+    background-color: #f9f9f9;  
+    transition: border-color 0.3s;  
+  }  
+  
+  .meal-name:focus,  
+  .meal-description:focus {  
+    outline: none;  
+    border-color: #44dd44; /* Darker green on focus */  
+  }  
+  
+  .add-meal {  
+    display: block;  
+    margin: 10px auto 0;  
+    background-color: #006400; /* Dark green */  
+    color: white;  
+    border: none;  
+    padding: 10px 20px;  
+    border-radius: 10px;  
+    cursor: pointer;  
+    font-size: 16px;  
+    transition: background-color 0.3s;  
+  }  
+  
+  .add-meal:hover {  
+    background-color: #008000; /* Darker green on hover */  
+  }  
+  
+  /* Responsive styles */  
+  @media (min-width: 768px) {  
+    .meal-planner {  
+      grid-template-columns: repeat(2, 1fr);  
+    }  
+  }  
+  
+  @media (min-width: 1200px) {  
+    .meal-planner {  
+      grid-template-columns: repeat(3, 1fr);  
+    }  
+  }
